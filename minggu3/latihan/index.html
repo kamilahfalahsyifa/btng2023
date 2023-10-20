@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Bootstrap</title>
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="p-3 m-1 bg-info w-75"></div>
+
+    <!-- Text alignment + Color + Font Size + Font Weight-->
+    <h1 class="text-start text-danger fs-2 fw-bold">
+      Text Start danger fs-2 fw-bold
+    </h1>
+    <h1 class="text-center text-secondary fs-3 fw-light">
+      Text Center secondary fs-3 fw-light
+    </h1>
+    <h1 class="text-end text-warning fs-4 fst-italic">
+      Text End warning fs-4 fst-italic
+    </h1>
+
+    <!-- Flexbox -->
+    <p>Flex</p>
+    <div class="d-flex">
+      <div
+        class="box p-3 bg-danger text-light fw-bold border border-start-0 border-5"
+      >
+        box 1
+      </div>
+      <div
+        class="box p-3 bg-warning text-success fw-bold border border-dark border-3"
+      >
+        box 1
+      </div>
+      <div
+        class="box p-3 bg-info text-primary fw-bold border border-bottom-0 border-5"
+      >
+        box 1
+      </div>
+    </div>
+    <p class="text-center">justify-content-center</p>
+    <div class="d-flex justify-content-center">
+      <div class="box p-3 bg-danger text-light fw-bold rounded-pill">box 1</div>
+      <div class="box p-3 bg-warning text-success fw-bold rounded-circle">
+        box 1
+      </div>
+      <div class="box p-3 bg-info text-primary fw-bold rounded-top rounded-5">
+        box 1
+      </div>
+    </div>
+    <p class="text-end">flex-row-reverse</p>
+    <div class="d-flex flex-row-reverse">
+      <div class="box p-3 bg-danger text-light fw-bold">box 1</div>
+      <div
+        class="box p-3 bg-warning text-success fw-bold rounded-circle shadow"
+      >
+        box 1
+      </div>
+      <div class="box p-3 bg-info text-primary fw-bold">box 1</div>
+    </div>
+    <!-- Layout Bootstrap -->
+    <div class="row">
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+      <div class="col-1 bg-danger text-light">col1</div>
+    </div>
+    <div class="row">
+      <div class="col-3 bg-danger text-light">col1</div>
+      <div class="col-3 bg-primary text-light">col1</div>
+      <div class="col-3 bg-success text-warning">col1</div>
+      <div class="col-3 bg-warning text-light">col1</div>
+    </div>
+    <div class="row">
+      <div class="col-4 bg-danger text-light">col1</div>
+      <div class="col-4 bg-warning text-light">col1</div>
+      <div class="col-4 bg-primary text-light">col1</div>
+    </div>
+    <div class="row">
+      <div class="col-8 bg-secondary text-light">col1</div>
+      <div class="col-4 bg-warning text-light">col1</div>
+    </div>
+    <br />
+    <!-- Latihan Layout -->
+    <div class="row">
+      <div class="col-12 bg-danger">
+        <h1 class="text-center">Judul Halaman (col 12)</h1>
+      </div>
+      <div class="col-4 bg-success text-light">
+        <p>sidebar (col 4)</p>
+        <ul>
+          <li>menu 1</li>
+          <li>menu 2</li>
+          <li>menu 3</li>
+        </ul>
+      </div>
+      <div class="col-8 bg-primary text-light">
+        <p>Content (col 8)</p>
+        <div class="row">
+          <div class="col-3 bg-dark">
+            <p>Card 1</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-3 bg-light text-danger">
+            <p>Card 2</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-3 bg-secondary">
+            <p>Card 3</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-3 bg-danger text-warning">
+            <p>Card 4</p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 bg-warning text-dark text-center">
+        <p>Footer</p>
+      </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container">
+      <div class="row mb-3"></div>
+      <h1 class="text-center">Belajar Layout</h1>
+      <div class="row">
+        <div class="col-12 bg-info text-center">
+          <h1>Judul Halaman (col-12)</h1>
+        </div>
+        <div class="col-4 bg-warning">
+          <p>Sidebar (col-4)</p>
+          <ul>
+            <li>Menu 1</li>
+            <li>Menu 2</li>
+            <li>Menu 3</li>
+            <li>Menu 4</li>
+          </ul>
+        </div>
+        <div class="col-8 bg-success">
+          <p>Content (col-8)</p>
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="bg-dark border border-light text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                blanditiis.
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="bg-dark border border-light text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                blanditiis.
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="bg-dark border border-light text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                blanditiis.
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="bg-dark border border-light text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea,
+                blanditiis.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center bg-info">footer</div>
+      </div>
+    </div>
+  </body>
+</html>
